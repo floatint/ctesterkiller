@@ -1,0 +1,11 @@
+pre.test{
+	display : inline-block; 
+	border-style : solid;
+	border-width : 1px;
+	border-color : ##990000;
+}
+
+span.unknown{
+	color : Red;
+	size : 14;
+}

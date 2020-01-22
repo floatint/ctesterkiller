@@ -1,0 +1,28 @@
+﻿	<div id="test_3">
+		<h2 align="center">Задача № 3</h2>
+		<h3 align="left">Примерный вид :</h3>
+		<pre class="test" align="left">
+struct S { int d; S *next; };
+S a[] = { <span class="unk">?</span>, a + 1, <span class="unk">?</span>, a + 2, <span class="unk">?</span>, a + 3, <span class="unk">?</span>, a + 4,
+		  <span class="unk">?</span>, a + 5, <span class="unk">?</span>, a + 6, <span class="unk">?</span>, NULL};
+S *p = a + <span class="unk">?</span>; <b>//удаление</b>
+p->next = p->next->next; p = a;
+while (p != NULL)
+{
+	cout << p->d << ' '; p = p->next;
+}
+		</pre>
+		<form name="dataForm">
+			<p>S *p = a + <span class="unk">?</span> = <input type="text" name="pap"></p>
+			<p>a[0] = <input type="text" name="a_0"></p>
+			<p>a[1] = <input type="text" name="a_1"></p>
+			<p>a[2] = <input type="text" name="a_2"></p>
+			<p>a[3] = <input type="text" name="a_3"></p>
+			<p>a[4] = <input type="text" name="a_4"></p>
+			<p>a[5] = <input type="text" name="a_5"></p>
+			<p>a[6] = <input type="text" name="a_6"></p>
+		</form>
+		
+		<p><input type="text" name="answer" readonly><span class="unk"> В конце может быть пробел !</span></p>
+		<p><button name="runButton" onclick="DoTest(test_3)">Получить ответ</button></p>
+	</div>
